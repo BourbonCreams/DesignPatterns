@@ -15,7 +15,7 @@ Every folder of this repo represents a DP and includes:
 - a theoretical explanation of the problem it solves and how;
 - a UML representation of the pattern. Use [PlantText](https://www.planttext.com) to copy-paste the PlantUML code of each DP;
 - a description of the elements of the pattern;
-- a code example in C++. You will need '''g++''' ('''sudo apt install g++''') to be able to compile the code examples (instructions to compile and run the code are provided).
+- a code example in C++. You will need ```g++``` (```sudo apt install g++```) to be able to compile the code examples (instructions to compile and run the code are provided).
 
 
 ## Sources
