@@ -13,7 +13,7 @@ There exist three types of DPs:
 ## Structure of the Repo
 Every folder of this repo represents a DP and includes:
 - a theoretical explanation of the problem it solves and how;
-- a UML representation of the pattern;
+- a UML representation of the pattern. Use [PlantText](https://www.planttext.com) to copy-paste the PlantUML code of each DP;
 - a description of the elements of the pattern;
 - a code example in C++.
 
