@@ -43,6 +43,6 @@ Director --> AbstractVehicleBuilder
 Compile and run with:
 ```
 mkdir build && cd build
-g++ ../main.cpp -o executable
+g++ ../src/main.cpp -o executable
 ./executable
 ```
