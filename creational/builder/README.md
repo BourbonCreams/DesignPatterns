@@ -37,7 +37,7 @@ Director --> AbstractVehicleBuilder
 
 </details>
 
-[Explain elements of the diagram (Tractor, Excavator, Vehicle, etc..) and how they interact]
+[Explain elements of the diagram and how they interact]
 
 ## How to compile and run
 Compile and run with:
