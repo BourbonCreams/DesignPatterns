@@ -37,7 +37,10 @@ Director --> AbstractVehicleBuilder
 
 </details>
 
-[Explain elements of the diagram and how they interact]
+The basic flow is:
+1. A client creates a Director object and calls its construct() method
+2. As a result of this call, the Director calls the buildPart() methods to create the parts of the complex object
+3. The client finally calls the Director's getResult() method to receive the brand new complex object
 
 ## How to compile and run
 Compile and run with:
