@@ -26,7 +26,7 @@ class Originator{
 
 class Client
 
-Originator --|> Memento
+Originator ..|> Memento
 Client o--> Memento
 
 @enduml
