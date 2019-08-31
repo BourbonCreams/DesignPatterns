@@ -4,20 +4,16 @@
  * getState() to return a previously saved state.
 */
 
-#include <string.h>
+#include <Memento.hpp>
+#include <iostream>
 
-class Memento{
 
-    std::string my_saved_state;
+void Memento::setState(std::string state_to_be_saved){
+    std::cout << ">>Memento says: Saving current piece of poetry.." << std::endl;
+    my_saved_state = state_to_be_saved;
+}
 
-public:
-    void setState(std::string state_to_be_saved){
-        std::cout << ">>Memento says: Saving current piece of poetry.." << std::endl;
-        my_saved_state = state_to_be_saved;
-    }
-
-    std::string getState(){
-        std::cout << ">>Memento says: Returning previous piece of poetry.." << std::endl;
-        return my_saved_state;
-    }
-};
+std::string Memento::getState(){
+    std::cout << ">>Memento says: Returning previous piece of poetry.." << std::endl;
+    return my_saved_state;
+}
