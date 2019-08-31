@@ -5,8 +5,8 @@
 
 #include <iostream>
 #include <string.h>
-#include "Memento.cpp"
-#include "Originator.cpp"
+#include "Memento.hpp"
+#include "Originator.hpp"
 
 int main(){
 
