@@ -1,5 +1,6 @@
 # Chain of Responsibility
-Sometimes objects that send requests don’t know who should handle them and what the response should be. Chain of Responsibility provides a solution that gives multiple objects a chance to handle the request. The request gets passed along a chain of objects, from more specific to more general, until one of them handles it. Each object in the chain can either handle the request or forward it to the next candidate in the chain.
+Sometimes objects receive requests and they don’t know who should handle them in a hierarchy of objects. Chain of Responsibility provides a solution that gives multiple objects a chance to handle the request. The request gets passed along a chain of objects, from more specific to more general, until one of them handles it. Each object in the chain can either handle the request or forward it to the next candidate in the chain.
+
 
 ## UML diagram
 ![ChainOfResponsibility](../../uml_diagrams/chainOfResponsibility.svg)
