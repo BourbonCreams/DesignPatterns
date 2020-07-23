@@ -1,29 +1,18 @@
 /*
  * Description
- * The Director uses the Builder class to create a brand new vehicle (the complex object)
- * using the construct() method, which receives the specifications for the new vehicle,
- * and the getVehicle() method, which returns the brand new vehicle.
+ * The Director class defines the methods declared by the Director abstract class.
 */
 
-#include "Vehicle.cpp"
-#include "ConcreteVehicleBuilder.cpp"
+#include "Director.hpp"
 
-class Director{
+// Create a new vehicle with the requested specifications
+void Director::construct(int number_of_wheels, std::string chassis, std::string engine){
+    builder.buildWheels(number_of_wheels);
+    builder.buildChassis(chassis);
+    builder.buildEngine(engine);
+}
 
-    ConcreteVehicleBuilder builder;
-
-public:
-
-    // Create a new vehicle with the requested specifications
-    void construct(int number_of_wheels, std::string chassis, std::string engine){
-        builder.buildWheels(number_of_wheels);
-        builder.buildChassis(chassis);
-        builder.buildEngine(engine);
-    }
-
-    // Return the brand new vehicle
-    Vehicle getVehicle(){
-        return builder.getVehicle();
-    }
-
-};
+// Return the brand new vehicle
+Vehicle Director::getVehicle(){
+    return builder.getVehicle();
+}

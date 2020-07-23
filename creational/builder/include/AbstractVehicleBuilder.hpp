@@ -1,7 +1,12 @@
 /*
  * Description
- * Defines the basic set of functions that a Vehicle builder should implement
+ * Defines the basic set of functions that a concrete Vehicle builder should implement
 */
+#ifndef _ABSTRACTVEHICLEBUILDER_
+#define _ABSTRACTVEHICLEBUILDER_
+
+#include <string>
+#include "Vehicle.hpp"
 
 class AbstractVehicleBuilder{
 
@@ -13,3 +18,5 @@ public:
     virtual Vehicle getVehicle() = 0;
 
 };
+
+#endif

@@ -6,36 +6,31 @@
  * 3. A particular engine model
 */
 
-class Vehicle{
+#include "Vehicle.hpp"
 
-    int wheels;
-    std::string chassis;
-    std::string engine;
 
-public:
-    // Setters
-    void setWheels(int wheels){
-    	this->wheels = wheels;
-    }
+// Setters
+void Vehicle::setWheels(int wheels){
+	this->wheels = wheels;
+}
 
-    void setChassis(std::string chassis){
-    	this->chassis = chassis;
-	}
+void Vehicle::setChassis(std::string chassis){
+	this->chassis = chassis;
+}
 
-    void setEngine(std::string engine){
-    	this->engine = engine;
-	}
+void Vehicle::setEngine(std::string engine){
+	this->engine = engine;
+}
 
-    // Getters
-    int getWheels(){
-        return wheels;
-    }
+// Getters
+int Vehicle::getWheels(){
+    return wheels;
+}
 
-    std::string getChassis(){
-        return chassis;
-    }
+std::string Vehicle::getChassis(){
+    return chassis;
+}
 
-    std::string getEngine(){
-        return engine;
-    }
-};
+std::string Vehicle::getEngine(){
+    return engine;
+}

@@ -4,27 +4,20 @@
  * defines the methods that are needed to build the vehicle.
 */
 
-#include "../include/AbstractVehicleBuilder.hpp"
+#include "ConcreteVehicleBuilder.hpp"
 
-class ConcreteVehicleBuilder : public AbstractVehicleBuilder{
+void ConcreteVehicleBuilder::buildWheels(int wheels){
+	vehicle.setWheels(wheels);
+}
 
-	Vehicle vehicle;
+void ConcreteVehicleBuilder::buildChassis(std::string chassis){
+    vehicle.setChassis(chassis);
+}
 
-public:
+void ConcreteVehicleBuilder::buildEngine(std::string engine){
+    vehicle.setEngine(engine);
+}
 
-    void buildWheels(int wheels){
-    	vehicle.setWheels(wheels);
-    }
-
-    void buildChassis(std::string chassis){
-        vehicle.setChassis(chassis);
-    }
-
-    void buildEngine(std::string engine){
-        vehicle.setEngine(engine);
-    }
-
-    Vehicle getVehicle(){
-        return vehicle;
-    }
-};
+Vehicle ConcreteVehicleBuilder::getVehicle(){
+    return vehicle;
+}
