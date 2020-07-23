@@ -46,6 +46,6 @@ The basic flow is:
 Compile and run with:
 ```
 mkdir build && cd build
-g++ ../src/main.cpp -o executable
+g++ ../src/* -o executable -I ../include
 ./executable
 ```
