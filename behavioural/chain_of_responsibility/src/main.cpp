@@ -1,6 +1,8 @@
 /*
  * Description
- *
+ * The user enters an input. If the input is a word (simplified to "it has no spaces")
+ * then the first object in the chain deals with it (prints it out), otherwise it passes
+ * along the chain
 */
 
 #include <iostream>

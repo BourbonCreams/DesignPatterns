@@ -1,6 +1,7 @@
 /*
  * Description
- *
+ * The SentenceHandler object can deal with any sentences and is the last object
+ * in the chain of responsibility
 */
 
 #include "SentenceHandler.hpp"
